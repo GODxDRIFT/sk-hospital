@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S.K MULTI-SPECIALITY HOSPITAL 24×7 | Serving Humanity with Quality Healthcare</title>
+  <meta name="description" content="S.K Multi-Speciality Hospital 24×7 - 24×7 Multi-Speciality Care in West Delhi. Expert doctors, 35+ beds, ICU, Modular OT, OPD, Cashless Insurance & Ayushman Bharat PM-JAY.">
+  <meta name="keywords" content="SK Multi Speciality Hospital, Hospital in Vikas Nagar, Hospital in Uttam Nagar, 24x7 Emergency Hospital Delhi, ICU Hastsal, Cashless Mediclaim West Delhi">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230054a6'/><circle cx='35' cy='35' r='14' fill='%2300a3ad'/><circle cx='65' cy='35' r='14' fill='%230054a6'/><circle cx='35' cy='65' r='14' fill='%230072ce'/><circle cx='65' cy='65' r='14' fill='%2300a3ad'/><circle cx='50' cy='50' r='10' fill='%23f37021'/></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Site Header Wrapper (Sticky Header on Scroll) -->
+  <header class="site-header-wrapper" id="siteHeader">
+    <!-- Top Announcement / Notification Ribbon -->
+    <div class="top-emergency-bar">
+      <div class="container top-bar-content">
+        <div class="top-bar-contact">
+          <a href="tel:07703964716" class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>077039 64716 (24×7 EMERGENCY)</span>
+          </a>
+          <span class="divider">|</span>
+          <a href="https://wa.me/917703964716" target="_blank" class="contact-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>+91 77039 64716 (WHATSAPP)</span>
+          </a>
+        </div>
+        <div class="top-bar-right">
+          <span class="tag-pill">24/7 Hotline</span>
+          <div class="top-socials">
+            <a href="https://wa.me/917703964716" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="tel:07703964716" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:info@skmultispecialityhospital.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#contact" aria-label="Location"><i class="fa-solid fa-location-dot"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="main-header" id="mainHeader">
+      <div class="container header-container">
+        
+        <!-- S.K Hospital Brand Logo (Exact Matching Layout) -->
+        <a href="index.html" class="brand-logo">
+          <div class="logo-wrapper">
+            <div class="ac-tagline">24×7 Emergency • <span class="ac-ayala">West Delhi</span></div>
+            <div class="logo-main-row">
+              <div class="logo-icon-grid">
+                <span class="dot d1"></span>
+                <span class="dot d2"></span>
+                <span class="dot d3"></span>
+                <span class="dot d4"></span>
+                <span class="dot d5"></span>
+              </div>
+              <div class="logo-text-block">
+                <div class="logo-title">S.K Hospital</div>
+                <div class="logo-subtitle">MULTI-SPECIALITY HOSPITAL <span>®</span></div>
+              </div>
+            </div>
+            <div class="logo-tagline-script">Serving Humanity with Quality Healthcare</div>
+          </div>
+        </a>
+
+        <!-- Desktop Nav Menu -->
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#find-doctor" class="nav-link" onclick="openDoctorModal()">Find a Doctor</a></li>
+            <li class="nav-item"><a href="#facilities" class="nav-link">Clinics & Facilities</a></li>
+            <li class="nav-item"><a href="#special-care" class="nav-link">Modular OT & ICU</a></li>
+            <li class="nav-item"><a href="#packages" class="nav-link">Health Packages</a></li>
+            <li class="nav-item"><a href="#carecard" class="nav-link">Ayushman & Cashless</a></li>
+            <li class="nav-item"><a href="#about-us" class="nav-link">About Us</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <button class="search-btn" id="searchToggleBtn" title="Search hospital services" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="btn-primary-header" onclick="openDoctorModal()">
+            <i class="fa-regular fa-calendar-check"></i>
+            <span>Book Appointment</span>
+          </button>
+          <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Open mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Search Overlay Form -->
+      <div class="search-overlay" id="searchOverlay">
+        <div class="container search-inner">
+          <div class="search-input-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="globalSearchInput" placeholder="Search for doctors, OPD timings, surgeries, ICU, blood tests, or health packages...">
+            <button class="close-search-btn" id="closeSearchBtn"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="quick-search-tags">
+            <span>Popular:</span>
+            <button onclick="handleQuickSearch('Executive Checkup')">Health Package (₹1,499)</button>
+            <button onclick="handleQuickSearch('Dr. S. K. Sharma')">Dr. S. K. Sharma (Physician)</button>
+            <button onclick="handleQuickSearch('Dr. Ananya Verma')">Dr. Ananya Verma (Gynaecology)</button>
+            <button onclick="handleQuickSearch('Emergency ICU')">24x7 Emergency & ICU</button>
+            <button onclick="handleQuickSearch('Laparoscopy')">Laparoscopic Surgery</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="logo-wrapper mini">
+        <div class="logo-title">S.K Hospital</div>
+        <div class="logo-subtitle">MULTI-SPECIALITY 24×7</div>
+      </div>
+      <button class="close-drawer-btn" id="closeDrawerBtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#find-doctor" onclick="closeMobileDrawer(); openDoctorModal();"><i class="fa-solid fa-user-doctor"></i> Find a Doctor</a></li>
+      <li><a href="#facilities" onclick="closeMobileDrawer()"><i class="fa-solid fa-hospital"></i> Hospital & Facilities</a></li>
+      <li><a href="#special-care" onclick="closeMobileDrawer()"><i class="fa-solid fa-heart-pulse"></i> Modular OT & Critical Care ICU</a></li>
+      <li><a href="#packages" onclick="closeMobileDrawer()"><i class="fa-solid fa-box-archive"></i> Health Packages (₹1,499)</a></li>
+      <li><a href="#carecard" onclick="closeMobileDrawer()"><i class="fa-solid fa-id-card"></i> Ayushman & Cashless Insurance</a></li>
+      <li><a href="#about-us" onclick="closeMobileDrawer()"><i class="fa-solid fa-circle-info"></i> About S.K Hospital</a></li>
+      <li><a href="#news" onclick="closeMobileDrawer()"><i class="fa-regular fa-newspaper"></i> Health Blog & Guides</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="tel:07703964716" class="drawer-phone-btn">
+        <i class="fa-solid fa-phone"></i> 077039 64716 (24×7 Emergency)
+      </a>
+      <a href="https://wa.me/917703964716" target="_blank" class="drawer-phone-btn outline">
+        <i class="fa-brands fa-whatsapp"></i> +91 77039 64716 (WhatsApp)
+      </a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- HERO BANNER SECTION (Clean, Professional Reference Match) -->
+  <section class="hero-section hero-clean-banner" id="heroBanner">
+    <div class="hero-banner-wrapper">
+      <img src="images/hero_banner_circles.jpg" alt="S.K Multi-Speciality Hospital Care" class="hero-banner-image">
+      <div class="hero-banner-content-overlay">
+        <div class="container hero-banner-container">
+          <div class="hero-banner-text-wrap">
+            <h1 class="hero-script-tagline">Serving Humanity 24×7</h1>
+            <p class="hero-banner-subtagline">Care Beyond Cure • West Delhi</p>
+            <div class="hero-banner-badges">
+              <span class="hero-pill-badge"><i class="fa-solid fa-clock"></i> Open 24/7 Daily</span>
+              <span class="hero-pill-badge"><i class="fa-solid fa-user-doctor"></i> Senior Doctors On-Duty</span>
+            </div>
+            <div class="hero-banner-actions">
+              <a href="https://wa.me/917703964716?text=Hi%20SK%20Hospital,%20I%20want%20to%20book%20an%20appointment" target="_blank" class="btn-hero-wa">
+                <i class="fa-brands fa-whatsapp"></i> Instant WhatsApp
+              </a>
+              <a href="tel:07703964716" class="btn-hero-call">
+                <i class="fa-solid fa-phone"></i> Call 077039 64716
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK ACTION / SERVICES SECTION: "How can we help you today?" -->
+  <section class="section-services-trio" id="servicesSection">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <h2 class="section-title-large">
+          <span class="text-orange">How can we</span> <span class="text-blue">help you today?</span>
+        </h2>
+        <p class="section-subtitle">Choose from our streamlined healthcare access points designed for your convenience</p>
+      </div>
+
+      <div class="services-trio-grid">
+        <!-- Card 1: Book A Doctor -->
+        <div class="service-trio-card card-doctor" onclick="openDoctorModal()">
+          <div class="trio-icon-bubble">
+            <i class="fa-solid fa-user-doctor"></i>
+          </div>
+          <h3 class="trio-title">Book a Doctor</h3>
+          <p class="trio-desc">Consult expert physicians, gynaecologists, orthopaedic surgeons, and paediatricians. General OPD at ₹300 with free follow-up.</p>
+          <div class="trio-link">
+            <span>Book Now</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- Card 2: Locate a Facility -->
+        <div class="service-trio-card card-facility" onclick="scrollToSection('contact')">
+          <div class="trio-icon-bubble">
+            <i class="fa-solid fa-hospital-user"></i>
+          </div>
+          <h3 class="trio-title">Locate Hospital</h3>
+          <p class="trio-desc">Shiv Vihar Road, near Bikaner Sweets, Vikas Nagar, Uttam Nagar, Hastsal, Delhi – 110059. Open 24 Hours Daily.</p>
+          <div class="trio-link">
+            <span>Find Hospital</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- Card 3: Our Care Services -->
+        <div class="service-trio-card card-services" onclick="scrollToSection('packages')">
+          <div class="trio-icon-bubble">
+            <i class="fa-solid fa-notes-medical"></i>
+          </div>
+          <h3 class="trio-title">Our Care Services</h3>
+          <p class="trio-desc">Explore comprehensive diagnostic packages (₹1,499), preventive lab tests, modular surgery, ICU, and 24x7 pharmacy.</p>
+          <div class="trio-link">
+            <span>Explore Services</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASSISTANCE / SWIFT CONTACT BANNER -->
+  <section class="section-swift-contact">
+    <div class="container">
+      <div class="swift-banner-card">
+        <div class="swift-left-person">
+          <div class="person-circle-bg"></div>
+          <!-- Friendly Care Concierge visual representation -->
+          <div class="person-visual-wrap">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Friendly S.K Hospital Care Concierge" class="person-img">
+            <div class="chat-floating-badge">
+              <i class="fa-solid fa-headset"></i>
+              <div>
+                <strong>Live Care Team</strong>
+                <span>Online & Ready</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swift-right-content">
+          <div class="swift-card-inner">
+            <h3 class="swift-title">Need help deciding tests?</h3>
+            <p class="swift-subtitle">Our swift contact team is here for you!</p>
+            
+            <div class="swift-qr-row">
+              <div class="qr-box">
+                <!-- Authentic QR Code Vector Graphic -->
+                <div class="qr-code-graphic">
+                  <svg viewBox="0 0 100 100" class="qr-svg">
+                    <rect width="100" height="100" fill="#ffffff"/>
+                    <!-- QR markers -->
+                    <rect x="10" y="10" width="26" height="26" fill="#00a3ad" rx="4"/>
+                    <rect x="15" y="15" width="16" height="16" fill="#ffffff" rx="2"/>
+                    <rect x="19" y="19" width="8" height="8" fill="#0054a6"/>
+
+                    <rect x="64" y="10" width="26" height="26" fill="#00a3ad" rx="4"/>
+                    <rect x="69" y="15" width="16" height="16" fill="#ffffff" rx="2"/>
+                    <rect x="73" y="19" width="8" height="8" fill="#0054a6"/>
+
+                    <rect x="10" y="64" width="26" height="26" fill="#00a3ad" rx="4"/>
+                    <rect x="15" y="69" width="16" height="16" fill="#ffffff" rx="2"/>
+                    <rect x="19" y="73" width="8" height="8" fill="#0054a6"/>
+
+                    <!-- Data dots -->
+                    <rect x="42" y="12" width="6" height="6" fill="#00a3ad"/>
+                    <rect x="52" y="12" width="6" height="6" fill="#0054a6"/>
+                    <rect x="42" y="24" width="6" height="6" fill="#0054a6"/>
+                    <rect x="52" y="24" width="6" height="6" fill="#00a3ad"/>
+                    
+                    <rect x="12" y="44" width="6" height="6" fill="#0054a6"/>
+                    <rect x="22" y="44" width="6" height="6" fill="#00a3ad"/>
+                    <rect x="32" y="44" width="6" height="6" fill="#0054a6"/>
+                    <rect x="44" y="44" width="12" height="12" fill="#f37021" rx="3"/>
+                    <rect x="62" y="44" width="6" height="6" fill="#00a3ad"/>
+                    <rect x="74" y="44" width="6" height="6" fill="#0054a6"/>
+                    <rect x="84" y="44" width="6" height="6" fill="#00a3ad"/>
+
+                    <rect x="42" y="64" width="6" height="6" fill="#0054a6"/>
+                    <rect x="52" y="64" width="6" height="6" fill="#00a3ad"/>
+                    <rect x="64" y="64" width="8" height="8" fill="#0054a6"/>
+                    <rect x="76" y="64" width="6" height="6" fill="#00a3ad"/>
+                    <rect x="42" y="78" width="8" height="8" fill="#00a3ad"/>
+                    <rect x="56" y="78" width="6" height="6" fill="#0054a6"/>
+                    <rect x="68" y="78" width="14" height="14" fill="#0054a6"/>
+                  </svg>
+                  <span class="qr-caption">Scan QR</span>
+                </div>
+              </div>
+              <div class="swift-details">
+                <p>Not sure which medical test or specialist consultation matches your symptoms? Scan the QR code or call our 24x7 care desk for personal guidance.</p>
+                <div class="swift-btn-wrap">
+                  <a href="tel:07703964716" class="btn-orange-swift">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>CALL 077039 64716</span>
+                  </a>
+                  <button class="btn-teal-swift" onclick="openChatModal()">
+                    <i class="fa-solid fa-comments"></i>
+                    <span>Chat with Care Team</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY OUR KIND OF CARE SECTION -->
+  <section class="section-why-care" id="about-us">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <h2 class="section-title-large">
+          <span class="text-orange">Why our kind of care</span> <span class="text-blue">is what you need</span>
+        </h2>
+        <p class="section-subtitle">Bridging primary wellness and specialized acute care across West Delhi</p>
+      </div>
+
+      <div class="why-care-layout">
+        <!-- Left: Video Card with Interactive Play Modal -->
+        <div class="why-video-box" onclick="openVideoModal()">
+          <img src="images/doctor_team.jpg" alt="S.K Hospital Compassionate Medical Staff and Doctor Team" class="why-video-thumbnail">
+          <div class="video-overlay">
+            <div class="play-btn-pulse">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="video-label-tag">
+              <i class="fa-solid fa-heart-pulse"></i>
+              <span>Watch: Serving Humanity 24×7</span>
+            </div>
+          </div>
+          <!-- Floating Heart Reactions -->
+          <div class="floating-heart h1"><i class="fa-solid fa-heart"></i></div>
+          <div class="floating-heart h2"><i class="fa-solid fa-heart"></i></div>
+          <div class="floating-heart h3"><i class="fa-solid fa-heart"></i></div>
+        </div>
+
+        <!-- Right: Value Proposition Features -->
+        <div class="why-features-box">
+          <div class="feature-item active">
+            <div class="feature-header">
+              <div class="feature-num">01</div>
+              <h4>Connected Continuum of Care</h4>
+            </div>
+            <p class="feature-text">
+              We seamlessly integrate your entire healthcare journey—from routine OPD checkups and 24x7 automated pathology blood tests to modern modular OT surgeries and ICU critical care.
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-header">
+              <div class="feature-num">02</div>
+              <h4>Passionate Care For Everyone</h4>
+            </div>
+            <p class="feature-text">
+              More than world-class medical technology, our doctors, nurses, and support staff embody true compassion, ensuring every patient is treated like family throughout their stay.
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-header">
+              <div class="feature-num">03</div>
+              <h4>Accessible & Transparent Healthcare</h4>
+            </div>
+            <p class="feature-text">
+              Predictable pricing (OPD ₹300 with Free 7-Day Follow-Up, Health Package ₹1,499), 30+ Cashless TPA partners, and Ayushman Bharat PM-JAY Golden Card desk assistance.
+            </p>
+          </div>
+
+          <!-- Trust Rating Indicators -->
+          <div class="why-trust-score">
+            <div class="stars-row">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="score-text">
+              <strong>4.3 / 5.0 Rating</strong>
+              <span>Verified Google Reviews & Magicpin listing from satisfied families across West Delhi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATIENT TESTIMONIAL BANNER -->
+  <section class="section-testimonial">
+    <div class="testimonial-slant-bg"></div>
+    <div class="container">
+      <div class="testimonial-card-wrap">
+        <div class="testimonial-quote-icon">
+          <i class="fa-solid fa-quote-left"></i>
+        </div>
+        <div class="testimonial-slider-track" id="testiSlider">
+          <div class="testi-slide active">
+            <blockquote class="testi-quote">
+              "Nurses are very friendly, attentive and kind. They take great care of the patients and provide timely medication and assistance throughout the stay."
+            </blockquote>
+            <div class="testi-author">
+              <strong>Ta Te</strong>
+              <span>West Delhi • Verified Google Review (5.0 ★)</span>
+            </div>
+          </div>
+          <div class="testi-slide">
+            <blockquote class="testi-quote">
+              "Hospital and staff were very supportive and positive during our visit. Clean rooms, hygienic environment, and prompt doctor attention when we needed it most."
+            </blockquote>
+            <div class="testi-author">
+              <strong>Santoshi Verma</strong>
+              <span>Vikas Nagar • Inpatient Family Member (5.0 ★)</span>
+            </div>
+          </div>
+          <div class="testi-slide">
+            <blockquote class="testi-quote">
+              "Modern facility, experienced doctors and overall very positive treatment experience. Highly recommended healthcare hospital for families in Hastsal & Uttam Nagar."
+            </blockquote>
+            <div class="testi-author">
+              <strong>Rachit Kumar 7375</strong>
+              <span>Uttam Nagar • Google Verified Review (5.0 ★)</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-dots" id="testiDots">
+          <span class="t-dot active" onclick="setTestiSlide(0)"></span>
+          <span class="t-dot" onclick="setTestiSlide(1)"></span>
+          <span class="t-dot" onclick="setTestiSlide(2)"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFERS FOR YOU / AYUSHMAN & CASHLESS SECTION -->
+  <section class="section-offers" id="carecard">
+    <div class="container">
+      <div class="offers-card-container">
+        <!-- Left Side: Information & QR -->
+        <div class="offers-info-col">
+          <div class="offers-badge">Cashless Hospitalization</div>
+          <h2 class="offers-title">Offers <span class="text-orange">For You</span></h2>
+          <p class="offers-subtitle">Gain seamless cashless mediclaim support, Ayushman Bharat benefits, and affordable healthcare packages.</p>
+
+          <div class="carecard-brand-row">
+            <div class="carecard-logo-text">
+              <i class="fa-solid fa-heart-pulse"></i>
+              <span>Care<strong>Desk</strong></span>
+            </div>
+          </div>
+
+          <ul class="carecard-perks-list">
+            <li>
+              <div class="perk-icon"><i class="fa-solid fa-check"></i></div>
+              <div class="perk-content">
+                <strong>Ayushman Bharat (PM-JAY) Golden Card Desk</strong>
+                <span>Dedicated counter for instant guidance and cashless treatment authorization.</span>
+              </div>
+            </li>
+            <li>
+              <div class="perk-icon"><i class="fa-solid fa-check"></i></div>
+              <div class="perk-content">
+                <strong>30+ Cashless TPA & Private Insurance Partners</strong>
+                <span>Star Health, HDFC ERGO, Care Health, Niva Bupa, ICICI Lombard, Bajaj Allianz, Medi Assist.</span>
+              </div>
+            </li>
+            <li>
+              <div class="perk-icon"><i class="fa-solid fa-check"></i></div>
+              <div class="perk-content">
+                <strong>Transparent Pricing & Free 7-Day Follow-Up</strong>
+                <span>General OPD at ₹300, Specialist OPD at ₹400-₹500, and Comprehensive Checkup at ₹1,499.</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="offers-action-row">
+            <button class="btn-orange-carecard" onclick="openCareCardModal()">
+              <span>INQUIRE CASHLESS ADMISSION</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <div class="qr-carecard-mini">
+              <div class="mini-qr-box">
+                <i class="fa-solid fa-qrcode"></i>
+              </div>
+              <span>Scan to Inquire</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: 3D CareCard Visual Mockups -->
+        <div class="offers-card-visual-col">
+          <div class="cards-3d-stack">
+            <!-- Primary CareCard Blue -->
+            <div class="card-mockup card-blue-3d">
+              <div class="card-top-row">
+                <div class="card-logo-mini">
+                  <span class="cc-dot"></span>
+                  <strong>S.K Hospital</strong>
+                </div>
+                <div class="card-chip"><i class="fa-solid fa-microchip"></i></div>
+              </div>
+              <div class="card-middle-row">
+                <span class="card-number">•••• •••• •••• 24×7</span>
+              </div>
+              <div class="card-bottom-row">
+                <div>
+                  <div class="c-label">CARDHOLDER</div>
+                  <div class="c-val">RAMESH KUMAR</div>
+                </div>
+                <div class="network-brand">Cashless TPA</div>
+              </div>
+            </div>
+
+            <!-- Secondary CareCard White/Silver -->
+            <div class="card-mockup card-white-3d">
+              <div class="card-top-row">
+                <div class="card-logo-mini silver">
+                  <strong>Ayushman</strong> <span>PM-JAY</span>
+                </div>
+                <div class="card-chip silver"><i class="fa-solid fa-microchip"></i></div>
+              </div>
+              <div class="card-middle-row">
+                <span class="card-number">•••• •••• •••• 110059</span>
+              </div>
+              <div class="card-bottom-row">
+                <div>
+                  <div class="c-label">BENEFICIARY</div>
+                  <div class="c-val">GOLDEN CARD DESK</div>
+                </div>
+                <div class="network-brand silver">S.K Hospital</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLINICS & HOSPITALS LOCATOR SECTION -->
+  <section class="section-facilities" id="facilities">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <h2 class="section-title-large">
+          <span class="text-orange">Where Can You</span> <span class="text-blue">Experience Quality Care?</span>
+        </h2>
+        <p class="section-subtitle">Discover our modern clinical facilities, modular surgical suites, intensive care units, and 24x7 diagnostic centers</p>
+      </div>
+
+      <!-- Facility Category Filters -->
+      <div class="facility-filters">
+        <button class="filter-btn active" data-filter="all">All Facilities</button>
+        <button class="filter-btn" data-filter="hospital">Critical Care & ICU</button>
+        <button class="filter-btn" data-filter="clinic">Modular Surgery OT</button>
+        <button class="filter-btn" data-filter="dialysis">Diagnostics & Lab</button>
+      </div>
+
+      <!-- Facilities Grid Layout Matching Reference -->
+      <div class="facilities-grid">
+
+        <!-- Main Featured Facility: S.K Multi-Speciality Hospital -->
+        <div class="facility-hero-card" data-category="hospital">
+          <img src="images/hero_hospital.jpg" alt="S.K Multi-Speciality Hospital West Delhi" class="fac-hero-bg">
+          <div class="fac-hero-gradient"></div>
+          <div class="fac-hero-body">
+            <span class="fac-badge">24×7 Flagship Hospital</span>
+            <h3 class="fac-hero-title">S.K Multi-Speciality Hospital</h3>
+            <p class="fac-hero-tagline">Serving Humanity with Quality Healthcare 24×7 • West Delhi</p>
+            
+            <ul class="fac-bullets">
+              <li><i class="fa-solid fa-location-dot"></i> Shiv Vihar Road, near Bikaner Sweets, Vikas Nagar, Uttam Nagar, Delhi – 110059</li>
+              <li><i class="fa-solid fa-stethoscope"></i> 35+ Inpatient Beds (ICU, HDU, Deluxe AC, Semi-Private, General Ward)</li>
+              <li><i class="fa-solid fa-award"></i> Google 4.3 ★ Verified Listing | Magicpin Accredited</li>
+              <li><i class="fa-solid fa-clock"></i> 24/7 Emergency Casualty & Critical Care Doctor Availability</li>
+            </ul>
+
+            <button class="btn-orange-fac" onclick="openFacilityModal('S.K Multi-Speciality Hospital 24×7', 'Shiv Vihar Road, near Bikaner Sweets, Vikas Nagar, Uttam Nagar, Delhi – 110059', '24x7 Emergency, ICU, Modular OT, General Medicine, Gynaecology & Obstetrics, Orthopaedics, Laparoscopic Surgery, Paediatrics, 24x7 Lab & Pharmacy')">
+              VIEW DETAILS <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4-Grid of Facilities -->
+        <div class="facility-sub-grid">
+          
+          <!-- Sub Card 1: Modular OT -->
+          <div class="facility-sub-card" data-category="clinic">
+            <img src="images/hero_hospital.jpg" alt="Modular Operation Theatre" class="sub-fac-img">
+            <div class="sub-fac-body">
+              <h4 class="sub-fac-title">Modular Operation Theatre</h4>
+              <p class="sub-fac-desc">HD Laparoscopic towers, C-Arm digital fluoroscopy, advanced anaesthesia station, and strict infection control.</p>
+              <button class="btn-sub-fac" onclick="openFacilityModal('Modular Operation Theatre (OT)', 'S.K Hospital 1st Floor', 'Laparoscopic Gallbladder, Appendix, Hernia Repair, Orthopaedic Plating & Nailing, Laser Surgery')">VIEW DETAILS</button>
+            </div>
+          </div>
+
+          <!-- Sub Card 2: ICU & HDU -->
+          <div class="facility-sub-card" data-category="hospital">
+            <img src="images/emergency_icu.jpg" alt="Intensive Care Unit ICU" class="sub-fac-img">
+            <div class="sub-fac-body">
+              <h4 class="sub-fac-title">Intensive Care Unit (ICU & HDU)</h4>
+              <p class="sub-fac-desc">Invasive and non-invasive ventilators, multi-para monitors (ECG, SpO2, NIBP, EtCO2), and 1:1 round-the-clock nursing.</p>
+              <button class="btn-sub-fac" onclick="openFacilityModal('Intensive Care Unit (ICU & HDU)', 'Critical Care Wing', 'Ventilators, Multi-para Vital Monitoring, Central Oxygen, 24x7 Critical Care Doctor On-Duty')">VIEW DETAILS</button>
+            </div>
+          </div>
+
+          <!-- Sub Card 3: 24x7 Pathology & Radiology -->
+          <div class="facility-sub-card" data-category="dialysis">
+            <img src="images/diagnostics_lab.jpg" alt="Pathology and Diagnostic Lab" class="sub-fac-img">
+            <div class="sub-fac-body">
+              <h4 class="sub-fac-title">24x7 Pathology & Radiology</h4>
+              <p class="sub-fac-desc">Automated blood analyzers (CBC, LFT, KFT, Lipid, Sugar), Digital X-Ray, Ultrasound (USG), and 12-Lead ECG.</p>
+              <button class="btn-sub-fac" onclick="openFacilityModal('Pathology & Diagnostic Laboratory', 'Ground Floor Diagnostics', 'CBC 24 parameters, HbA1c, LFT, KFT, Lipid Profile, Digital X-Ray, Ultrasound USG, 12-Lead ECG')">VIEW DETAILS</button>
+            </div>
+          </div>
+
+          <!-- Sub Card 4: In-House Pharmacy & Ambulance -->
+          <div class="facility-sub-card" data-category="hospital">
+            <img src="images/doctor_team.jpg" alt="Pharmacy and Ambulance Fleet" class="sub-fac-img">
+            <div class="sub-fac-body">
+              <h4 class="sub-fac-title">24x7 Pharmacy & Oxygen Fleet</h4>
+              <p class="sub-fac-desc">Ground-floor genuine medicine pharmacy open 24 hours daily + rapid oxygen-equipped emergency ambulance fleet.</p>
+              <button class="btn-sub-fac" onclick="openFacilityModal('24x7 Pharmacy & Ambulance Services', 'Ground Floor Entrance', '24 Hours In-House Pharmacy, Rapid Oxygen-Equipped Ambulance Fleet, Cold-Chain Stored Vaccines')">VIEW DETAILS</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HEALTH PACKAGES SECTION -->
+  <section class="section-packages" id="packages">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <h2 class="section-title-large">
+          <span class="text-orange">Diagnostic & Wellness</span> <span class="text-blue">Packages</span>
+        </h2>
+        <p class="section-subtitle">Tailored preventive health packages and transparent OPD pricing for West Delhi families</p>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Package 1: General Physician OPD -->
+        <div class="package-card">
+          <div class="pkg-top-banner lite-bg">
+            <div class="pkg-badge">Routine OPD</div>
+            <h3 class="pkg-name">General Physician OPD</h3>
+            <div class="pkg-price">₹ 300 <span>/ consultation</span></div>
+          </div>
+          <div class="pkg-content">
+            <p class="pkg-summary">Senior internal medicine doctor consultation with complimentary 7-day follow-up review.</p>
+            <ul class="pkg-features">
+              <li><i class="fa-solid fa-circle-check"></i> Detailed Medical History & Physical Exam</li>
+              <li><i class="fa-solid fa-circle-check"></i> Blood Pressure, Pulse, SpO2 & Blood Sugar check</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>FREE 7-Day Follow-Up</strong> consultation</li>
+              <li><i class="fa-solid fa-circle-check"></i> Fever, Diabetes, Typhoid, Viral diagnosis</li>
+              <li><i class="fa-solid fa-circle-check"></i> Prescription & Lifestyle Guidance</li>
+            </ul>
+            <button class="btn-pkg" onclick="showPackageModal('General Physician OPD')">BOOK THIS OPD (₹300)</button>
+          </div>
+        </div>
+
+        <!-- Package 2: Comprehensive Health Checkup Package (₹1,499) -->
+        <div class="package-card featured">
+          <div class="pkg-top-banner plus-bg">
+            <div class="pkg-badge highlight">Most Popular</div>
+            <h3 class="pkg-name">Comprehensive Health Checkup</h3>
+            <div class="pkg-price">₹ 1,499 <span>/ complete package</span></div>
+          </div>
+          <div class="pkg-content">
+            <p class="pkg-summary">Complete whole-body screening including 24 lab parameters, vital organs evaluation & 12-Lead ECG.</p>
+            <ul class="pkg-features">
+              <li><i class="fa-solid fa-circle-check"></i> Complete Blood Count (CBC - 24 Parameters)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Fasting Blood Sugar (FBS) + HbA1c 3-Month Average</li>
+              <li><i class="fa-solid fa-circle-check"></i> Liver Function Test (LFT - SGOT, SGPT, Bilirubin)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Kidney Function Test (KFT - Urea, Creatinine, Uric Acid)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lipid Profile (Cholesterol, HDL, LDL, Triglycerides)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Complete Urine Routine & Microscopy</li>
+              <li><i class="fa-solid fa-circle-check"></i> 12-Lead Resting Electrocardiogram (ECG)</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Detailed Senior Physician Consultation & Review</strong></li>
+            </ul>
+            <button class="btn-pkg orange" onclick="showPackageModal('Comprehensive Health Checkup')">BOOK THIS PACKAGE</button>
+          </div>
+        </div>
+
+        <!-- Package 3: Specialist Consultations -->
+        <div class="package-card">
+          <div class="pkg-top-banner exec-bg">
+            <div class="pkg-badge">Specialist Care</div>
+            <h3 class="pkg-name">Specialist Doctor OPD</h3>
+            <div class="pkg-price">₹ 400 - ₹ 500 <span>/ consult</span></div>
+          </div>
+          <div class="pkg-content">
+            <p class="pkg-summary">Direct consultation with post-graduate senior specialist surgeons, gynaecologists, and paediatricians.</p>
+            <ul class="pkg-features">
+              <li><i class="fa-solid fa-circle-check"></i> Gynaecology & Obstetrician OPD: ₹500</li>
+              <li><i class="fa-solid fa-circle-check"></i> Orthopaedic & Joint Surgeon OPD: ₹500</li>
+              <li><i class="fa-solid fa-circle-check"></i> Laparoscopic Surgeon OPD: ₹500</li>
+              <li><i class="fa-solid fa-circle-check"></i> Senior Paediatrician OPD: ₹400</li>
+              <li><i class="fa-solid fa-circle-check"></i> 24×7 Emergency Casualty Triage: ₹500</li>
+              <li><i class="fa-solid fa-circle-check"></i> Priority slot allocation & digital reports</li>
+            </ul>
+            <button class="btn-pkg" onclick="showPackageModal('Specialist Consultations')">BOOK SPECIALIST CONSULT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS & UPDATES SECTION -->
+  <section class="section-news" id="news">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <h2 class="section-title-large">
+          <span class="text-orange">News &</span> <span class="text-blue">Updates</span>
+        </h2>
+        <p class="section-subtitle">Stay informed with the latest healthcare milestones, health tips, and community programs</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="news-filter-tabs">
+        <button class="news-tab-btn active" data-tab="all">FEATURED STORIES</button>
+        <button class="news-tab-btn" data-tab="press">HEALTH GUIDES</button>
+      </div>
+
+      <div class="news-grid">
+        <!-- Article 1: Fever & Dengue -->
+        <article class="news-card" onclick="openNewsModal(1)">
+          <div class="news-thumb-wrap">
+            <img src="images/blog_fever_dengue.jpg" alt="Dengue and Viral Fever" class="news-img">
+            <span class="news-tag">Internal Medicine</span>
+          </div>
+          <div class="news-body">
+            <h3 class="news-title">Understanding Viral Fever, Dengue & Monsoon Illnesses: OPD vs 24x7 Emergency</h3>
+            <p class="news-excerpt">Learn how to differentiate common viral fever from Dengue, warning signs of low platelets, and when immediate hospital admission is needed.</p>
+            <div class="news-footer">
+              <span class="news-readmore">Read article <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="news-date"><i class="fa-regular fa-calendar"></i> Dr. S. K. Sharma</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2: Maternity & Normal Delivery -->
+        <article class="news-card" onclick="openNewsModal(2)">
+          <div class="news-thumb-wrap">
+            <img src="images/blog_maternity_delivery.jpg" alt="Maternity Delivery" class="news-img">
+            <span class="news-tag">Maternity</span>
+          </div>
+          <div class="news-body">
+            <h3 class="news-title">Normal Delivery vs C-Section: Essential Antenatal Care & Nutrition Guide</h3>
+            <p class="news-excerpt">Comprehensive guide to trimester-wise antenatal care, nutritional requirements, exercise for normal delivery, and safe C-section protocols.</p>
+            <div class="news-footer">
+              <span class="news-readmore">Read article <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="news-date"><i class="fa-regular fa-calendar"></i> Dr. Ananya Verma</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3: Knee Pain & Arthritis -->
+        <article class="news-card" onclick="openNewsModal(3)">
+          <div class="news-thumb-wrap">
+            <img src="images/blog_ortho_knee_joint.jpg" alt="Knee Pain & Arthritis" class="news-img">
+            <span class="news-tag">Orthopaedics</span>
+          </div>
+          <div class="news-body">
+            <h3 class="news-title">Managing Knee Pain, Arthritis & Bone Health: Early Signs You Shouldn't Ignore</h3>
+            <p class="news-excerpt">Practical insights on preventing osteoarthritis, joint preservation techniques, calcium/Vitamin D3 management, and orthopaedic care.</p>
+            <div class="news-footer">
+              <span class="news-readmore">Read article <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="news-date"><i class="fa-regular fa-calendar"></i> Dr. Rajesh Aggarwal</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="news-center-btn">
+        <button class="btn-teal-news" onclick="openNewsModal(4)">LOAD MORE ARTICLES</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 24/7 HELPLINE CALLOUT BANNER -->
+  <section class="section-helpline-cta" id="special-care">
+    <div class="container">
+      <div class="helpline-pill-card">
+        <div class="helpline-icon-wrap">
+          <i class="fa-solid fa-phone-volume"></i>
+        </div>
+        <div class="helpline-text-content">
+          <div class="hl-title">24/7 PATIENT HELPLINE: <a href="tel:07703964716">077039 64716</a> / <a href="https://wa.me/917703964716" target="_blank">+91 77039 64716</a></div>
+          <div class="hl-sub">Emergency casualty triage, ambulance dispatch, ICU admission, and doctor consultations are ready round the clock.</div>
+        </div>
+        <a href="tel:07703964716" class="btn-helpline-call">CALL NOW</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <!-- Col 1: Brand Info -->
+      <div class="footer-col brand-col">
+        <div class="logo-wrapper footer-logo">
+          <div class="ac-tagline light">24×7 Emergency • <span class="ac-ayala">West Delhi</span></div>
+          <div class="logo-main-row">
+            <div class="logo-icon-grid light">
+              <span class="dot d1"></span><span class="dot d2"></span>
+              <span class="dot d3"></span><span class="dot d4"></span>
+              <span class="dot d5"></span>
+            </div>
+            <div class="logo-text-block light">
+              <div class="logo-title">S.K Hospital</div>
+              <div class="logo-subtitle">MULTI-SPECIALITY HOSPITAL</div>
+            </div>
+          </div>
+          <div class="logo-tagline-script light">Serving Humanity with Quality Healthcare</div>
+        </div>
+        <p class="footer-about-text">
+          S.K Multi-Speciality Hospital 24×7 is committed to delivering high quality, accessible, and compassionate healthcare to all families in Vikas Nagar, Uttam Nagar, Hastsal, and West Delhi.
+        </p>
+        <div class="ac-health-shield">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Google 4.3 ★ Verified | Magicpin Accredited</span>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">CLINICAL CARE</h4>
+        <ul class="footer-links">
+          <li><a href="#about-us">About S.K Hospital</a></li>
+          <li><a href="#" onclick="openDoctorModal()">Find a Doctor</a></li>
+          <li><a href="#facilities">Modular OT & ICU</a></li>
+          <li><a href="#packages">Health Packages (₹1,499)</a></li>
+          <li><a href="#carecard">Ayushman & Cashless</a></li>
+          <li><a href="#news">Health Blog & Guides</a></li>
+          <li><a href="tel:07703964716">24×7 Emergency Desk</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Services -->
+      <div class="footer-col">
+        <h4 class="footer-heading">SERVICES</h4>
+        <ul class="footer-links">
+          <li><a href="#" onclick="openDoctorModal('General')">Internal Medicine OPD</a></li>
+          <li><a href="#" onclick="openDoctorModal('Gynaecology')">Gynaecology & Maternity</a></li>
+          <li><a href="#" onclick="openDoctorModal('Orthopaedics')">Orthopaedics & Fracture Care</a></li>
+          <li><a href="#" onclick="openDoctorModal('Surgery')">Laparoscopic Keyhole Surgery</a></li>
+          <li><a href="#" onclick="openDoctorModal('Paediatrics')">Paediatrics & Vaccination</a></li>
+          <li><a href="#facilities">24x7 Automated Pathology Lab</a></li>
+          <li><a href="#facilities">Inpatient Deluxe AC Rooms</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact & Social -->
+      <div class="footer-col contact-col" id="contact">
+        <h4 class="footer-heading">GET IN TOUCH</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Shiv Vihar Road, near Bikaner Sweets, Vikas Nagar, Uttam Nagar, Hastsal, Delhi – 110059</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>077039 64716 (24×7 Emergency)</span>
+          </li>
+          <li>
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>+91 77039 64716 (WhatsApp)</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@skmultispecialityhospital.com</span>
+          </li>
+        </ul>
+
+        <div class="footer-social-box">
+          <span class="social-label">Follow our updates:</span>
+          <div class="footer-social-icons">
+            <a href="https://wa.me/917703964716" target="_blank" aria-label="WhatsApp" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="tel:07703964716" aria-label="Phone" class="social-icon"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:info@skmultispecialityhospital.com" aria-label="Email" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Legal Bar -->
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-flex">
+        <p class="copyright-text">© 2026 S.K Multi-Speciality Hospital 24×7. All Rights Reserved. Serving Humanity with Quality Healthcare.</p>
+        <div class="legal-links">
+          <a href="#contact">Hospital Address</a>
+          <span>•</span>
+          <a href="#carecard">Cashless TPAs</a>
+          <span>•</span>
+          <a href="#packages">Transparent Pricing</a>
+          <span>•</span>
+          <a href="tel:07703964716">077039 64716</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Emergency Bottom Banner Ribbon -->
+    <div class="footer-emergency-ribbon">
+      <div class="container">
+        <span>For medical emergencies requiring immediate dispatch, please dial <strong>077039 64716</strong> or proceed directly to S.K Multi-Speciality Hospital Emergency Room, Shiv Vihar Road, Vikas Nagar, Uttam Nagar.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING QUICK ACTIONS (Back to Top & Quick Chat) -->
+  <div class="floating-action-cluster">
+    <button class="float-btn float-chat" id="floatingChatBtn" onclick="openChatModal()" title="Chat with S.K Hospital Concierge">
+      <i class="fa-solid fa-comment-dots"></i>
+      <span class="pulse-dot"></span>
+    </button>
+    <button class="float-btn float-top" id="backToTopBtn" onclick="scrollToTop()" title="Back to top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+  </div>
+
+  <!-- MODALS -->
+
+  <!-- 1. DOCTOR APPOINTMENT BOOKING MODAL -->
+  <div class="modal-backdrop" id="doctorModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <i class="fa-solid fa-user-doctor"></i>
+            <h3>Find a Doctor & Book Appointment</h3>
+          </div>
+          <button class="modal-close-btn" onclick="closeDoctorModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="doc-search-filters">
+            <div class="form-group">
+              <label><i class="fa-solid fa-stethoscope"></i> Specialty</label>
+              <select id="docSpecialtyFilter" onchange="filterDoctors()">
+                <option value="all">All Specialties</option>
+                <option value="General">General & Internal Medicine (Dr. S. K. Sharma)</option>
+                <option value="Gynaecology">Gynaecology & Obstetrics (Dr. Ananya Verma)</option>
+                <option value="Orthopaedics">Orthopaedics & Joint Care (Dr. Rajesh Aggarwal)</option>
+                <option value="Surgery">General & Laparoscopic Surgery (Dr. Amit Malhotra)</option>
+                <option value="Paediatrics">Paediatrics & Child Health (Dr. Neha Gupta)</option>
+                <option value="Emergency">24×7 Critical Care & ICU (Dr. R. K. Yadav)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label><i class="fa-solid fa-hospital"></i> Location / Department</label>
+              <select id="docLocationFilter" onchange="filterDoctors()">
+                <option value="all">S.K Multi-Speciality Hospital (All Wings)</option>
+                <option value="OPD">OPD Consultation Chambers (9 AM - 9 PM)</option>
+                <option value="ICU">24×7 ICU & Critical Care Wing</option>
+                <option value="OT">Modular Operation Theatre Suite</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="doc-results-list" id="doctorList">
+            <!-- Populated dynamically by app.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. FACILITY DETAILS MODAL -->
+  <div class="modal-backdrop" id="facilityModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <i class="fa-solid fa-hospital"></i>
+            <h3 id="facModalTitle">Facility Details</h3>
+          </div>
+          <button class="modal-close-btn" onclick="closeFacilityModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="fac-modal-info">
+            <div class="fac-info-item">
+              <strong><i class="fa-solid fa-map-location-dot"></i> Location:</strong>
+              <span id="facModalLoc">Shiv Vihar Road, near Bikaner Sweets, Vikas Nagar, Uttam Nagar, Delhi – 110059</span>
+            </div>
+            <div class="fac-info-item">
+              <strong><i class="fa-solid fa-kit-medical"></i> Available Services:</strong>
+              <span id="facModalServices">Specialist Consultations, ICU, Modular OT, Laboratory, Radiology, Pharmacy</span>
+            </div>
+            <div class="fac-info-item">
+              <strong><i class="fa-solid fa-clock"></i> Operating Hours:</strong>
+              <span>Emergency & Lab: 24 Hours Daily | OPD: 09:00 AM – 09:00 PM</span>
+            </div>
+            <div class="fac-info-item">
+              <strong><i class="fa-solid fa-phone"></i> 24x7 Hotline:</strong>
+              <span>077039 64716 / WhatsApp: +91 77039 64716</span>
+            </div>
+          </div>
+          <div class="modal-action-row">
+            <button class="btn-orange-hero w-100" onclick="closeFacilityModal(); openDoctorModal();">Find Doctors at this Facility</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. PACKAGE DETAILS MODAL -->
+  <div class="modal-backdrop" id="packageModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <i class="fa-solid fa-box-medical"></i>
+            <h3 id="pkgModalTitle">Health Package</h3>
+          </div>
+          <button class="modal-close-btn" onclick="closePackageModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <p id="pkgModalDesc" class="mb-3 text-muted">Comprehensive diagnostic assessment with transparent charges.</p>
+          <div class="pkg-modal-booking-form">
+            <h4 class="form-title">Book Package Schedule</h4>
+            <div class="form-group">
+              <label>Select Preferred Package</label>
+              <select class="form-control" id="pkgBranchSelect">
+                <option>Comprehensive Health Checkup Package (₹1,499 - CBC, HbA1c, LFT, KFT, ECG)</option>
+                <option>General Physician OPD Consultation (₹300 - Free 7-Day Follow-Up)</option>
+                <option>Specialist OPD Consultation (₹400 - ₹500)</option>
+                <option>Emergency Casualty Triage (₹500)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Preferred Date</label>
+              <input type="date" class="form-control" id="pkgDateInput" value="2026-09-20">
+            </div>
+            <div class="form-group">
+              <label>Patient Full Name</label>
+              <input type="text" class="form-control" placeholder="e.g. Ramesh Kumar" id="pkgPatientName">
+            </div>
+            <div class="form-group">
+              <label>Contact Mobile Number</label>
+              <input type="tel" class="form-control" placeholder="077039XXXX" id="pkgPatientPhone">
+            </div>
+            <button class="btn-orange-hero w-100" onclick="confirmPackageBooking()">Confirm & Send Appointment Request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. CARECARD / CASHLESS TPA REGISTRATION MODAL -->
+  <div class="modal-backdrop" id="careCardModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <i class="fa-solid fa-id-card"></i>
+            <h3>Ayushman & Cashless Mediclaim Desk</h3>
+          </div>
+          <button class="modal-close-btn" onclick="closeCareCardModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted">Enjoy cashless hospitalization across 30+ insurance partners and Ayushman Bharat PM-JAY at S.K Multi-Speciality Hospital.</p>
+          <form onsubmit="handleCareCardSubmit(event)">
+            <div class="form-group">
+              <label>Patient Full Name</label>
+              <input type="text" required placeholder="First Name and Last Name" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Mobile Number</label>
+              <input type="tel" required placeholder="10-digit mobile number" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Insurance Provider / Scheme</label>
+              <select class="form-control">
+                <option>Ayushman Bharat (PM-JAY) Golden Card</option>
+                <option>Star Health Insurance</option>
+                <option>HDFC ERGO General Insurance</option>
+                <option>Care Health Insurance</option>
+                <option>Niva Bupa (Max Bupa)</option>
+                <option>ICICI Lombard General</option>
+                <option>Bajaj Allianz General</option>
+                <option>New India / National / Oriental / United India</option>
+                <option>Medi Assist TPA / Paramount TPA</option>
+                <option>CGHS / ECHS / DGEHS Reimbursement Guidance</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-orange-hero w-100 mt-3">Submit for Cashless Assistance</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. LIVE CARE CONCIERGE CHAT MODAL -->
+  <div class="modal-backdrop" id="chatModal">
+    <div class="modal-dialog modal-chat">
+      <div class="modal-content">
+        <div class="modal-header chat-header">
+          <div class="chat-agent-info">
+            <div class="agent-avatar">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <div>
+              <h4 class="m-0">S.K Hospital Care Concierge</h4>
+              <span class="agent-status"><span class="status-dot"></span> Online 24×7 • Fast Response</span>
+            </div>
+          </div>
+          <button class="modal-close-btn light" onclick="closeChatModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="chat-body" id="chatMessages">
+          <div class="chat-msg bot">
+            <div class="msg-bubble">
+              Hello! 👋 Welcome to S.K Multi-Speciality Hospital 24×7 (Vikas Nagar, West Delhi). How can we assist with your health needs today?
+            </div>
+          </div>
+          <div class="chat-msg bot">
+            <div class="msg-bubble quick-options">
+              <p>Common requests:</p>
+              <button onclick="sendQuickChatMessage('I want to book an appointment with a doctor')">Book Doctor OPD Appointment</button>
+              <button onclick="sendQuickChatMessage('Help me choose the right HealthChek package')">₹1,499 Health Package Info</button>
+              <button onclick="sendQuickChatMessage('Inquire about Modular OT and ICU services')">Modular OT & ICU Services</button>
+              <button onclick="sendQuickChatMessage('Check accredited Cashless TPAs and Ayushman')">Cashless TPAs & Ayushman Bharat</button>
+            </div>
+          </div>
+        </div>
+        <div class="chat-footer">
+          <input type="text" id="chatInput" placeholder="Type your health inquiry..." onkeypress="handleChatKeyPress(event)">
+          <button class="send-chat-btn" onclick="sendUserMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. VIDEO MODAL -->
+  <div class="modal-backdrop" id="videoModal">
+    <div class="modal-dialog modal-video">
+      <div class="modal-content video-content">
+        <button class="modal-close-btn video-close" onclick="closeVideoModal()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="video-container">
+          <img src="images/doctor_team.jpg" alt="S.K Hospital Clinical Team" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. APPOINTMENT BOOKING MODAL -->
+  <div class="modal-backdrop" id="appointmentBookingModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <i class="fa-regular fa-calendar-check text-orange"></i>
+            <h3>Book OPD Slot with Specialist</h3>
+          </div>
+          <button class="modal-close-btn" onclick="closeBookingModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <form onsubmit="handleAppointmentSubmit(event)">
+            <div class="form-group mb-3">
+              <label class="form-label">Patient Full Name</label>
+              <input type="text" id="appNameInput" required class="form-control" placeholder="e.g. Rajesh Kumar">
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label">Contact Mobile Number</label>
+              <input type="tel" id="appPhoneInput" required class="form-control" placeholder="10-digit mobile number">
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label">Select Specialist Doctor / OPD</label>
+              <select id="appDocSelect" class="form-control">
+                <option value="Dr. S. K. Sharma (General Medicine - ₹300)">Dr. S. K. Sharma — General & Internal Medicine (₹300 OPD)</option>
+                <option value="Dr. Ananya Verma (Gynaecology & Obstetrics - ₹500)">Dr. Ananya Verma — Gynaecology & Obstetrics (₹500)</option>
+                <option value="Dr. Rajesh Aggarwal (Orthopaedics - ₹500)">Dr. Rajesh Aggarwal — Orthopaedics & Joint Care (₹500)</option>
+                <option value="Dr. Amit Malhotra (Laparoscopic Surgery - ₹500)">Dr. Amit Malhotra — General & Laparoscopic Surgery (₹500)</option>
+                <option value="Dr. Neha Gupta (Paediatrics - ₹400)">Dr. Neha Gupta — Paediatrics & Vaccination (₹400)</option>
+                <option value="24x7 Critical Care / Emergency Doctor (₹500)">24×7 Critical Care & Emergency Triage (₹500)</option>
+              </select>
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label">Preferred Date</label>
+              <input type="date" id="appDateInput" class="form-control" value="2026-09-20">
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label">Symptoms / Consultation Notes</label>
+              <textarea id="appNotesInput" class="form-control" rows="2" placeholder="Briefly describe health concerns (e.g. fever, joint pain, checkup)..."></textarea>
+            </div>
+            <button type="submit" class="btn-orange-hero w-100">Confirm & Book via WhatsApp Desk</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. BLOG / HEALTH ARTICLE READER MODAL -->
+  <div class="modal-backdrop" id="blogReaderModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <i class="fa-solid fa-newspaper text-teal"></i>
+            <h3 id="blogModalTitle">Health Article</h3>
+          </div>
+          <button class="modal-close-btn" onclick="closeBlogModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <div id="blogModalMeta" class="blog-meta-strip mb-3 text-muted"></div>
+          <div class="blog-featured-img-wrap mb-4" style="border-radius: 12px; overflow: hidden; max-height: 280px;">
+            <img id="blogModalImg" src="images/blog_fever_dengue.jpg" alt="Article banner" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div id="blogModalBody" class="blog-article-typography"></div>
+          <div class="modal-action-row mt-4 pt-3 border-top">
+            <button class="btn-orange-hero" onclick="closeBlogModal(); openDoctorModal();">Consult Specialist on this Topic</button>
+            <button class="btn-outline-hero ms-2" onclick="closeBlogModal()">Close Article</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>

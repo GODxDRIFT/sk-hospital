@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cashless Insurance & Health Packages | S.K MULTI-SPECIALITY HOSPITAL 24×7</title>
+  <meta name="description" content="Cashless Mediclaim, 30+ TPAs, Ayushman Bharat PM-JAY desk and ₹1,499 Health Checkup Package at S.K Multi-Speciality Hospital 24×7, Uttam Nagar, Delhi.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <div class="top-emergency-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-contact">
+        <a href="tel:07703964716" class="contact-item">
+          <i class="fa-solid fa-truck-medical"></i>
+          <span>24×7 Emergency: <strong>077039 64716</strong></span>
+        </a>
+        <span class="divider">|</span>
+        <a href="https://wa.me/917703964716" target="_blank" class="contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp: +91 77039 64716</span>
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <span class="tag-pill"><i class="fa-solid fa-shield-halved"></i> 30+ Cashless TPAs</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="container header-container">
+      <a href="index.html" class="sk-brand-logo">
+        <div class="sk-logo-icon">
+          <i class="fa-solid fa-hospital"></i>
+          <span class="cross-sub"><i class="fa-solid fa-plus"></i></span>
+        </div>
+        <div class="sk-logo-text">
+          <div class="sk-logo-title">S.K MULTI-SPECIALITY HOSPITAL</div>
+          <div class="sk-logo-subtitle">24×7 Multi-Speciality Care • West Delhi</div>
+        </div>
+      </a>
+
+      <nav class="desktop-nav">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="doctors.html" class="nav-link">Doctors</a></li>
+          <li class="nav-item"><a href="departments.html" class="nav-link">Departments</a></li>
+          <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities & ICU</a></li>
+          <li class="nav-item"><a href="insurance-packages.html" class="nav-link" style="color: var(--hw-blue); font-weight:700;">Cashless & TPA</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Health Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-primary-header" onclick="openBookingModal()">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Book Appointment</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: linear-gradient(135deg, var(--hw-blue-dark) 0%, var(--hw-blue) 100%); color: #fff; padding: 60px 0;">
+    <div class="container text-center">
+      <div class="badge-247-live" style="margin-bottom: 12px;">Hassle-Free Mediclaim & Transparent Pricing</div>
+      <h1 style="font-size: 2.8rem; color: #fff; margin-bottom: 12px;">Cashless Insurance & Health Packages</h1>
+      <p style="font-size: 1.1rem; color: #e2f1ff; max-width: 700px; margin: 0 auto;">
+        30+ TPA partners, Ayushman Bharat (PM-JAY) Golden Card desk, and comprehensive diagnostic health packages at ₹1,499.
+      </p>
+    </div>
+  </section>
+
+  <!-- Packages Grid -->
+  <section style="padding: 60px 0; background: #f8fafc;">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <h2 class="section-title-large">Diagnostic <span class="text-orange">Health Packages</span></h2>
+      </div>
+
+      <div class="packages-grid" style="margin-top: 30px;">
+        <div class="package-card">
+          <div class="pkg-top-banner lite-bg">
+            <h3 class="pkg-name">General Physician OPD</h3>
+            <div class="pkg-price">₹ 300 <span>/ consult</span></div>
+          </div>
+          <div class="pkg-content">
+            <p class="pkg-summary">Senior physician consultation with <strong>Free 7-Day Follow-Up</strong>.</p>
+            <ul class="pkg-features">
+              <li><i class="fa-solid fa-circle-check"></i> Doctor Consultation</li>
+              <li><i class="fa-solid fa-circle-check"></i> Blood Pressure, Pulse, Sugar & SpO2</li>
+              <li><i class="fa-solid fa-circle-check"></i> Free 7-Day Review</li>
+            </ul>
+            <button class="btn-pkg" onclick="openBookingModal('Dr. S. K. Sharma', 'General Medicine')">Book OPD (₹300)</button>
+          </div>
+        </div>
+
+        <div class="package-card featured">
+          <div class="pkg-top-banner plus-bg">
+            <div class="pkg-badge highlight">Recommended</div>
+            <h3 class="pkg-name">Comprehensive Health Package</h3>
+            <div class="pkg-price">₹ 1,499 <span>/ complete</span></div>
+          </div>
+          <div class="pkg-content">
+            <p class="pkg-summary">Complete whole body checkup with 24 lab parameters and ECG.</p>
+            <ul class="pkg-features">
+              <li><i class="fa-solid fa-circle-check"></i> CBC 24 parameters</li>
+              <li><i class="fa-solid fa-circle-check"></i> Fasting Blood Sugar & HbA1c</li>
+              <li><i class="fa-solid fa-circle-check"></i> Liver Function Test (LFT)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Kidney Function Test (KFT)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lipid Profile</li>
+              <li><i class="fa-solid fa-circle-check"></i> Urine Routine & Microscopy</li>
+              <li><i class="fa-solid fa-circle-check"></i> 12-Lead ECG & Doctor Review</li>
+            </ul>
+            <button class="btn-pkg orange" onclick="openHealthCheckModal()">Book Package for ₹1,499</button>
+          </div>
+        </div>
+
+        <div class="package-card">
+          <div class="pkg-top-banner exec-bg">
+            <h3 class="pkg-name">Specialist Doctor OPD</h3>
+            <div class="pkg-price">₹ 400 - ₹ 500 <span>/ consult</span></div>
+          </div>
+          <div class="pkg-content">
+            <p class="pkg-summary">Consult senior surgeons, gynaecologists, and paediatricians.</p>
+            <ul class="pkg-features">
+              <li><i class="fa-solid fa-circle-check"></i> Gynaecologist OPD: ₹500</li>
+              <li><i class="fa-solid fa-circle-check"></i> Orthopaedic Surgeon OPD: ₹500</li>
+              <li><i class="fa-solid fa-circle-check"></i> Laparoscopic Surgeon OPD: ₹500</li>
+              <li><i class="fa-solid fa-circle-check"></i> Paediatrician OPD: ₹400</li>
+            </ul>
+            <button class="btn-pkg" onclick="openBookingModal()">Book Specialist OPD</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cashless TPAs -->
+  <section style="padding: 60px 0;">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <h2 class="section-title-large">30+ Cashless <span class="text-blue">TPA & Insurance Partners</span></h2>
+        <p class="section-subtitle">Star Health • HDFC ERGO • Care Health • Niva Bupa • ICICI Lombard • Bajaj Allianz • New India • National • Medi Assist</p>
+      </div>
+
+      <div style="background: #ecfdf5; border: 1px solid #a7f3d0; padding: 24px; border-radius: 16px; margin-top: 30px; text-align: center;">
+        <h3 style="color: #065f46; font-size: 1.3rem; margin-bottom: 8px;"><i class="fa-solid fa-id-card"></i> Ayushman Bharat (PM-JAY) Help Desk</h3>
+        <p style="color: #047857; margin-bottom: 16px;">
+          Eligible PM-JAY Golden Card holders can avail cashless treatment and guidance at our hospital. Reimbursement assistance is also provided for CGHS, ECHS, and DGEHS beneficiaries.
+        </p>
+        <a href="tel:07703964716" class="btn-primary-header" style="text-decoration: none; display: inline-flex;">
+          <i class="fa-solid fa-phone"></i> Inquire TPA Desk: 077039 64716
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="sk-brand-logo" style="margin-bottom: 16px;">
+          <div class="sk-logo-icon" style="background: #ffffff; color: var(--hw-blue-dark);">
+            <i class="fa-solid fa-hospital"></i>
+          </div>
+          <div class="sk-logo-text">
+            <div class="sk-logo-title" style="color: #ffffff; font-size: 1.15rem;">S.K MULTI-SPECIALITY HOSPITAL</div>
+            <div class="sk-logo-subtitle" style="color: #38bdf8; font-size: 0.7rem;">24×7 Multi-Speciality Care • West Delhi</div>
+          </div>
+        </div>
+        <p class="footer-about-text">
+          Shiv Vihar Road, near Bikaner Sweets, Vikas Nagar, Uttam Nagar, Hastsal, Delhi – 110059. 24x7 Helpline: 077039 64716.
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-flex">
+        <p class="copyright-text">© 2026 S.K Multi-Speciality Hospital 24×7. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

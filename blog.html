@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Blog & Medical Guides | S.K MULTI-SPECIALITY HOSPITAL 24×7</title>
+  <meta name="description" content="Read doctor-written health blogs, fever guidance, pregnancy delivery tips, arthritis care, and child vaccination schedule by S.K Multi-Speciality Hospital 24×7.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <div class="top-emergency-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-contact">
+        <a href="tel:07703964716" class="contact-item">
+          <i class="fa-solid fa-truck-medical"></i>
+          <span>24×7 Emergency: <strong>077039 64716</strong></span>
+        </a>
+        <span class="divider">|</span>
+        <a href="https://wa.me/917703964716" target="_blank" class="contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp: +91 77039 64716</span>
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <span class="tag-pill"><i class="fa-solid fa-book-medical"></i> Doctor Insights</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="container header-container">
+      <a href="index.html" class="sk-brand-logo">
+        <div class="sk-logo-icon">
+          <i class="fa-solid fa-hospital"></i>
+          <span class="cross-sub"><i class="fa-solid fa-plus"></i></span>
+        </div>
+        <div class="sk-logo-text">
+          <div class="sk-logo-title">S.K MULTI-SPECIALITY HOSPITAL</div>
+          <div class="sk-logo-subtitle">24×7 Multi-Speciality Care • West Delhi</div>
+        </div>
+      </a>
+
+      <nav class="desktop-nav">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="doctors.html" class="nav-link">Doctors</a></li>
+          <li class="nav-item"><a href="departments.html" class="nav-link">Departments</a></li>
+          <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities & ICU</a></li>
+          <li class="nav-item"><a href="insurance-packages.html" class="nav-link">Cashless & TPA</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link" style="color: var(--hw-blue); font-weight:700;">Health Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-primary-header" onclick="openBookingModal()">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Book Appointment</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: linear-gradient(135deg, var(--hw-blue-dark) 0%, var(--hw-blue) 100%); color: #fff; padding: 60px 0;">
+    <div class="container text-center">
+      <div class="badge-247-live" style="margin-bottom: 12px;">Doctor Health Education</div>
+      <h1 style="font-size: 2.8rem; color: #fff; margin-bottom: 12px;">Health Articles & Patient Guides</h1>
+      <p style="font-size: 1.1rem; color: #e2f1ff; max-width: 700px; margin: 0 auto;">
+        Expert health tips, symptoms awareness, disease prevention, and post-operative recovery guides written by our doctors.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section style="padding: 60px 0;">
+    <div class="container">
+      <div class="news-grid" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));">
+        
+        <article class="news-card" onclick="openBlogModal(1)">
+          <div class="news-thumb-wrap">
+            <img src="images/blog_fever_dengue.jpg" alt="Viral Fever and Dengue Guide" class="news-img">
+            <span class="news-tag">Internal Medicine</span>
+          </div>
+          <div class="news-body">
+            <h3 class="news-title">Understanding Viral Fever, Dengue & Monsoon Illnesses: OPD vs 24x7 Emergency</h3>
+            <p class="news-excerpt">Learn how to differentiate common viral fever from Dengue, warning signs of low platelets, and when immediate ICU or hospital admission is needed.</p>
+            <div class="news-footer">
+              <span class="news-readmore">Read Full Guide <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="news-date">Dr. S. K. Sharma</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card" onclick="openBlogModal(2)">
+          <div class="news-thumb-wrap">
+            <img src="images/blog_maternity_delivery.jpg" alt="Maternity Delivery" class="news-img">
+            <span class="news-tag">Maternity</span>
+          </div>
+          <div class="news-body">
+            <h3 class="news-title">Normal Delivery vs C-Section: Essential Antenatal Care & Nutrition Guide</h3>
+            <p class="news-excerpt">Comprehensive guide to trimester-wise antenatal care, nutritional requirements, exercise for normal delivery, and safe C-section protocols.</p>
+            <div class="news-footer">
+              <span class="news-readmore">Read Full Guide <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="news-date">Dr. Ananya Verma</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card" onclick="openBlogModal(3)">
+          <div class="news-thumb-wrap">
+            <img src="images/blog_ortho_knee_joint.jpg" alt="Knee Pain & Arthritis" class="news-img">
+            <span class="news-tag">Orthopaedics</span>
+          </div>
+          <div class="news-body">
+            <h3 class="news-title">Managing Knee Pain, Arthritis & Bone Health: Early Signs You Shouldn't Ignore</h3>
+            <p class="news-excerpt">Practical insights on preventing osteoarthritis, joint preservation techniques, calcium/Vitamin D3 management, and orthopaedic care.</p>
+            <div class="news-footer">
+              <span class="news-readmore">Read Full Guide <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="news-date">Dr. Rajesh Aggarwal</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card" onclick="openBlogModal(4)">
+          <div class="news-thumb-wrap">
+            <img src="images/hero_hospital.jpg" alt="Laparoscopic Surgery" class="news-img">
+            <span class="news-tag">Laparoscopic Surgery</span>
+          </div>
+          <div class="news-body">
+            <h3 class="news-title">Why Laparoscopic Keyhole Surgery is Safer & Faster: Gallstones, Appendix & Hernia</h3>
+            <p class="news-excerpt">Discover why laparoscopic surgery offers minimal pain, tiny 5mm incisions, almost zero blood loss, and discharge within 24 to 48 hours.</p>
+            <div class="news-footer">
+              <span class="news-readmore">Read Full Guide <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="news-date">Dr. Amit Malhotra</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card" onclick="openBlogModal(5)">
+          <div class="news-thumb-wrap">
+            <img src="images/diagnostics_lab.jpg" alt="Cashless & Ayushman" class="news-img">
+            <span class="news-tag">Cashless & TPA</span>
+          </div>
+          <div class="news-body">
+            <h3 class="news-title">How to Claim Cashless Treatment Under Ayushman Bharat (PM-JAY) & Private TPAs</h3>
+            <p class="news-excerpt">Step-by-step walkthrough of cashless mediclaim authorization, Ayushman Bharat PM-JAY Golden Card admissions, and emergency TPA approvals.</p>
+            <div class="news-footer">
+              <span class="news-readmore">Read Full Guide <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="news-date">TPA Help Desk</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card" onclick="openBlogModal(6)">
+          <div class="news-thumb-wrap">
+            <img src="images/doctor_team.jpg" alt="Child Vaccination Chart" class="news-img">
+            <span class="news-tag">Paediatrics</span>
+          </div>
+          <div class="news-body">
+            <h3 class="news-title">Complete Child Vaccination Chart (0 to 5 Years) & Newborn Care Tips</h3>
+            <p class="news-excerpt">Essential pediatric immunization schedule from birth to 5 years, fever management post-vaccination, and newborn developmental milestones.</p>
+            <div class="news-footer">
+              <span class="news-readmore">Read Full Guide <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="news-date">Dr. Neha Gupta</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="sk-brand-logo" style="margin-bottom: 16px;">
+          <div class="sk-logo-icon" style="background: #ffffff; color: var(--hw-blue-dark);">
+            <i class="fa-solid fa-hospital"></i>
+          </div>
+          <div class="sk-logo-text">
+            <div class="sk-logo-title" style="color: #ffffff; font-size: 1.15rem;">S.K MULTI-SPECIALITY HOSPITAL</div>
+            <div class="sk-logo-subtitle" style="color: #38bdf8; font-size: 0.7rem;">24×7 Multi-Speciality Care • West Delhi</div>
+          </div>
+        </div>
+        <p class="footer-about-text">
+          Shiv Vihar Road, near Bikaner Sweets, Vikas Nagar, Uttam Nagar, Hastsal, Delhi – 110059. 24x7 Helpline: 077039 64716.
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-flex">
+        <p class="copyright-text">© 2026 S.K Multi-Speciality Hospital 24×7. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Blog Reader Modal -->
+  <div class="modal-backdrop" id="blogReaderModal" style="display: none;">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <i class="fa-solid fa-newspaper" style="color: var(--hw-teal);"></i>
+            <h3 id="blogModalTitle">Health Article</h3>
+          </div>
+          <button class="modal-close-btn" onclick="closeBlogModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body" style="max-height: 75vh; overflow-y: auto;">
+          <div id="blogModalMeta" style="color: var(--slate-500); font-size: 0.88rem; margin-bottom: 14px;"></div>
+          <img id="blogModalImg" src="" alt="Blog Banner" style="width: 100%; max-height: 280px; object-fit: cover; border-radius: 12px; margin-bottom: 18px;">
+          <div id="blogModalBody" style="line-height: 1.7; color: var(--slate-700); font-size: 0.98rem;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specialist Doctors & OPD Timings | S.K MULTI-SPECIALITY HOSPITAL 24×7</title>
+  <meta name="description" content="Meet expert specialist doctors at S.K Multi-Speciality Hospital 24×7, Vikas Nagar, Uttam Nagar, Delhi. General Medicine, Gynaecology, Orthopaedics, Surgery, Paediatrics, ICU.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <div class="top-emergency-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-contact">
+        <a href="tel:07703964716" class="contact-item">
+          <i class="fa-solid fa-truck-medical"></i>
+          <span>24×7 Emergency: <strong>077039 64716</strong></span>
+        </a>
+        <span class="divider">|</span>
+        <a href="https://wa.me/917703964716" target="_blank" class="contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp: +91 77039 64716</span>
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <span class="tag-pill"><i class="fa-solid fa-clock"></i> OPD: 09:00 AM – 09:00 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="container header-container">
+      <a href="index.html" class="sk-brand-logo">
+        <div class="sk-logo-icon">
+          <i class="fa-solid fa-hospital"></i>
+          <span class="cross-sub"><i class="fa-solid fa-plus"></i></span>
+        </div>
+        <div class="sk-logo-text">
+          <div class="sk-logo-title">S.K MULTI-SPECIALITY HOSPITAL</div>
+          <div class="sk-logo-subtitle">24×7 Multi-Speciality Care • West Delhi</div>
+        </div>
+      </a>
+
+      <nav class="desktop-nav">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="doctors.html" class="nav-link" style="color: var(--hw-blue); font-weight:700;">Doctors</a></li>
+          <li class="nav-item"><a href="departments.html" class="nav-link">Departments</a></li>
+          <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities & ICU</a></li>
+          <li class="nav-item"><a href="insurance-packages.html" class="nav-link">Cashless & TPA</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Health Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-primary-header" onclick="openBookingModal()">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Book Appointment</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: linear-gradient(135deg, var(--hw-blue-dark) 0%, var(--hw-blue) 100%); color: #fff; padding: 60px 0;">
+    <div class="container text-center">
+      <div class="badge-247-live" style="margin-bottom: 12px;">Expert Medical Team</div>
+      <h1 style="font-size: 2.8rem; color: #fff; margin-bottom: 12px;">Our Specialist Doctors & OPD Schedules</h1>
+      <p style="font-size: 1.1rem; color: #e2f1ff; max-width: 700px; margin: 0 auto;">
+        Consult senior physicians, surgeons, gynaecologists, and paediatricians. General OPD at ₹300 with Free 7-Day Follow-Up.
+      </p>
+    </div>
+  </section>
+
+  <!-- Doctors Section -->
+  <section style="padding: 60px 0; background: #f8fafc;">
+    <div class="container">
+      <div class="facility-filters" style="margin-bottom: 30px;">
+        <button class="filter-btn active" onclick="renderDoctorsGrid('all')">All Specialists</button>
+        <button class="filter-btn" onclick="renderDoctorsGrid('General')">Internal Medicine</button>
+        <button class="filter-btn" onclick="renderDoctorsGrid('Gynaecology')">Gynaecology & Maternity</button>
+        <button class="filter-btn" onclick="renderDoctorsGrid('Orthopaedics')">Orthopaedics</button>
+        <button class="filter-btn" onclick="renderDoctorsGrid('Surgery')">Laparoscopic Surgery</button>
+        <button class="filter-btn" onclick="renderDoctorsGrid('Paediatrics')">Paediatrics</button>
+        <button class="filter-btn" onclick="renderDoctorsGrid('Emergency')">24×7 ICU & Trauma</button>
+      </div>
+
+      <div class="packages-grid" id="doctorsHomeGrid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="sk-brand-logo" style="margin-bottom: 16px;">
+          <div class="sk-logo-icon" style="background: #ffffff; color: var(--hw-blue-dark);">
+            <i class="fa-solid fa-hospital"></i>
+          </div>
+          <div class="sk-logo-text">
+            <div class="sk-logo-title" style="color: #ffffff; font-size: 1.15rem;">S.K MULTI-SPECIALITY HOSPITAL</div>
+            <div class="sk-logo-subtitle" style="color: #38bdf8; font-size: 0.7rem;">24×7 Multi-Speciality Care • West Delhi</div>
+          </div>
+        </div>
+        <p class="footer-about-text">
+          Shiv Vihar Road, near Bikaner Sweets, Vikas Nagar, Uttam Nagar, Hastsal, Delhi – 110059. 24x7 Helpline: 077039 64716.
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-flex">
+        <p class="copyright-text">© 2026 S.K Multi-Speciality Hospital 24×7. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Appointment Modal -->
+  <div class="modal-backdrop" id="appointmentBookingModal" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <i class="fa-solid fa-calendar-check" style="color: var(--hw-blue);"></i>
+            <h3>Book OPD Appointment</h3>
+          </div>
+          <button class="modal-close-btn" onclick="closeBookingModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <form onsubmit="handleAppointmentSubmit(event)">
+            <div class="form-group" style="margin-bottom: 12px;">
+              <label style="font-weight: 600; font-size: 0.88rem;">Select Doctor / Department</label>
+              <select class="form-control" id="appDocSelect" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px;">
+                <option value="Dr. S. K. Sharma (Senior Physician & Diabetologist - ₹300)">Dr. S. K. Sharma (Senior Physician & Diabetologist - ₹300)</option>
+                <option value="Dr. Ananya Verma (Gynaecologist & Obstetrician - ₹500)">Dr. Ananya Verma (Gynaecologist & Obstetrician - ₹500)</option>
+                <option value="Dr. Rajesh Aggarwal (Orthopaedic & Joint Surgeon - ₹500)">Dr. Rajesh Aggarwal (Orthopaedic & Joint Surgeon - ₹500)</option>
+                <option value="Dr. Amit Malhotra (General & Laparoscopic Surgeon - ₹500)">Dr. Amit Malhotra (General & Laparoscopic Surgeon - ₹500)</option>
+                <option value="Dr. Neha Gupta (Paediatrician & Child Specialist - ₹400)">Dr. Neha Gupta (Paediatrician & Child Specialist - ₹400)</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 12px;">
+              <label style="font-weight: 600; font-size: 0.88rem;">Patient Full Name</label>
+              <input type="text" id="appNameInput" required placeholder="Enter full name" class="form-control" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 12px;">
+              <label style="font-weight: 600; font-size: 0.88rem;">Mobile Number</label>
+              <input type="tel" id="appPhoneInput" required placeholder="Enter 10-digit mobile" class="form-control" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label style="font-weight: 600; font-size: 0.88rem;">Preferred Appointment Date</label>
+              <input type="date" id="appDateInput" required class="form-control" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px;">
+            </div>
+            <button type="submit" class="btn-orange-hero w-100" style="width: 100%; padding: 12px; font-weight: 700;">
+              Confirm & Book Slot via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
